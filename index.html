@@ -1,12 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetworkcoM - Sistemas Inteligentes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══════════════════════════════════════════
+       SEO BÁSICO
+  ════════════════════════════════════════════ -->
+  <title>NetworkcoM - Chatbots IA, Automatización RPA e Integraciones API | Argentina</title>
+  <meta name="description" content="Desarrollamos chatbots con inteligencia artificial, automatización RPA e integraciones API para empresas argentinas. Reducí costos y automatizá tu negocio.">
+  <meta name="keywords" content="chatbot inteligencia artificial Argentina, automatización RPA empresas, integraciones API Argentina, chatbot WhatsApp empresas, RPA Buenos Aires, desarrollo chatbot Argentina">
+  <meta name="author" content="NetworkcoM">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://www.networkcom.com.ar/">
+
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+  ════════════════════════════════════════════ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.networkcom.com.ar/">
+  <meta property="og:title" content="NetworkcoM - Chatbots IA, RPA e Integraciones API en Argentina">
+  <meta property="og:description" content="Automatizamos y potenciamos empresas argentinas con Inteligencia Artificial, chatbots para WhatsApp y automatización de procesos con RPA.">
+  <meta property="og:image" content="https://www.networkcom.com.ar/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NetworkcoM - Sistemas Inteligentes para Empresas">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="NetworkcoM">
+
+  <!-- ═══════════════════════════════════════════
+       TWITTER / X
+  ════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@networkcom">
+  <meta name="twitter:title" content="NetworkcoM - Sistemas Inteligentes para Empresas">
+  <meta name="twitter:description" content="Chatbots con IA, automatización RPA e integraciones API para empresas argentinas.">
+  <meta name="twitter:image" content="https://www.networkcom.com.ar/images/og-image.jpg">
+
+  <!-- ═══════════════════════════════════════════
+       PERFORMANCE: PRECONNECT / PRELOAD
+  ════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload del font principal para evitar FOUT -->
+  <!-- <link rel="preload" as="font" href="/fonts/tu-font.woff2" type="font/woff2" crossorigin> -->
+
+  <!-- ═══════════════════════════════════════════
+       FAVICON
+  ════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#050508">
+
+  <!-- ═══════════════════════════════════════════
+       SCHEMA MARKUP JSON-LD
+  ════════════════════════════════════════════ -->
+
+  <!-- Organización -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.networkcom.com.ar/#organization",
+    "name": "NetworkcoM",
+    "url": "https://www.networkcom.com.ar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.networkcom.com.ar/images/logo.png",
+      "width": 300,
+      "height": 60
+    },
+    "description": "Empresa argentina especializada en Chatbots con Inteligencia Artificial, Automatización RPA e Integraciones API.",
+    "areaServed": { "@type": "Country", "name": "Argentina" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressRegion": "CABA",
+      "addressCountry": "AR"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/networkcom",
+      "https://www.instagram.com/networkcom"
+    ]
+  }
+  </script>
+
+  <!-- WebSite con SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.networkcom.com.ar/#website",
+    "url": "https://www.networkcom.com.ar",
+    "name": "NetworkcoM - Sistemas Inteligentes",
+    "inLanguage": "es-AR",
+    "publisher": { "@id": "https://www.networkcom.com.ar/#organization" }
+  }
+  </script>
+
+  <!-- Servicios -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Servicios de NetworkcoM",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Chatbots con Inteligencia Artificial",
+          "url": "https://www.networkcom.com.ar/#chatbot-ia",
+          "description": "Chatbots con IA para atención al cliente, ventas y soporte en WhatsApp y web.",
+          "provider": { "@id": "https://www.networkcom.com.ar/#organization" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Automatización RPA",
+          "url": "https://www.networkcom.com.ar/#automatizacion-rpa",
+          "description": "Automatización de procesos repetitivos mediante Robotic Process Automation.",
+          "provider": { "@id": "https://www.networkcom.com.ar/#organization" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Integraciones API",
+          "url": "https://www.networkcom.com.ar/#integraciones-api",
+          "description": "Integración de sistemas, CRMs y plataformas mediante APIs REST.",
+          "provider": { "@id": "https://www.networkcom.com.ar/#organization" }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage para rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es un chatbot con inteligencia artificial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un chatbot con IA es un sistema que simula conversaciones humanas usando procesamiento de lenguaje natural. Puede responder consultas, calificar leads y brindar soporte 24/7 en WhatsApp, web u otras plataformas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tarda en implementarse un chatbot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un chatbot básico puede estar operativo en 2 a 4 semanas. Proyectos con integraciones complejas pueden tomar entre 4 y 8 semanas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajan con empresas de todo Argentina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, trabajamos con empresas de toda Argentina de forma 100% remota. Hemos desarrollado proyectos en Buenos Aires, Córdoba, Rosario, Mendoza y otras provincias."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es la automatización RPA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RPA (Robotic Process Automation) es la automatización de tareas repetitivas mediante robots de software: procesar facturas, cargar datos, generar reportes y cualquier tarea manual sistemática."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <!-- Fallback para bots que no ejecutan JS -->
+  <noscript>
+    <div style="font-family:sans-serif; padding:2rem; text-align:center">
+      <h1>NetworkcoM - Sistemas Inteligentes</h1>
+      <p>Chatbots con IA, Automatización RPA e Integraciones API para empresas en Argentina.</p>
+      <p>Para ver el sitio completo, por favor habilitá JavaScript en tu navegador.</p>
+    </div>
+  </noscript>
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
