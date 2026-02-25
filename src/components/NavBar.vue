@@ -1,6 +1,6 @@
 <template>
   <nav :class="{ scrolled: scrolled }">
-    <div class="logo">🌐 NetworkcoM</div>
+  <link rel="icon" href="/favicon.ico">
     
     <ul class="nav-links" :class="{ active: menuActive }">
       <li v-for="link in navLinks" :key="link.id">
