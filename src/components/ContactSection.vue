@@ -69,22 +69,43 @@
 
       </div>
     </div>
+
+    <!-- iframe oculto: recibe la respuesta de Google sin CORS ni 401 -->
+    <iframe
+      ref="hiddenFrame"
+      name="hidden-iframe"
+      style="display:none"
+      aria-hidden="true"
+    ></iframe>
+
+    <!-- Formulario nativo oculto que apunta al iframe -->
+    <form
+      ref="hiddenForm"
+      :action="FORM_ACTION"
+      method="POST"
+      target="hidden-iframe"
+      style="display:none"
+    >
+      <input type="hidden" name="entry.2005620554" :value="form.name" />
+      <input type="hidden" name="entry.1045781291" :value="form.email" />
+      <input type="hidden" name="entry.1166974658" :value="form.phone" />
+      <input type="hidden" name="entry.839337160"  :value="form.service" />
+    </form>
+
   </section>
 </template>
 
 <script setup>
 import { ref, reactive } from 'vue'
 
-const FORM_ACTION    = 'https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/formResponse'
-const ENTRY_NOMBRE   = 'entry.2005620554'
-const ENTRY_EMAIL    = 'entry.1045781291'
-const ENTRY_TELEFONO = 'entry.1166974658'
-const ENTRY_SERVICIO = 'entry.839337160'
+const FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/formResponse'
 
 const form = reactive({ name: '', email: '', phone: '', service: '' })
 const errors = reactive({ name: '', email: '', phone: '', service: '' })
 const isSubmitting = ref(false)
 const submitStatus = ref(null)
+const hiddenForm = ref(null)
+const hiddenFrame = ref(null)
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -128,17 +149,12 @@ const submitForm = async () => {
   isSubmitting.value = true
 
   try {
-    const body = new FormData()
-    body.append(ENTRY_NOMBRE,   form.name.trim())
-    body.append(ENTRY_EMAIL,    form.email.trim())
-    body.append(ENTRY_TELEFONO, form.phone.trim())
-    body.append(ENTRY_SERVICIO, form.service.trim())
+    // Enviamos via el form nativo oculto → iframe oculto
+    // Este método evita CORS y el 401 de Google Forms
+    hiddenForm.value.submit()
 
-    await fetch(FORM_ACTION, {
-      method: 'POST',
-      mode: 'no-cors',
-      body
-    })
+    // Google no devuelve confirmación, esperamos un momento y mostramos éxito
+    await new Promise(resolve => setTimeout(resolve, 1000))
 
     submitStatus.value = 'success'
     form.name    = ''
