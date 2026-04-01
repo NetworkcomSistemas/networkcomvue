@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-// No necesitas nada aquí para el iframe
+// No necesitas nada aquí
 </script>
 
 <style scoped>
@@ -47,8 +47,27 @@ section {
   overflow: hidden;
 }
 
-iframe {
-  border-radius: 10px;
-  display: block;
+p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00ff88, #00ccff);
+  color: #000;
+  box-shadow: 0 5px 25px rgba(0, 255, 255, 0.4);
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px rgba(0, 255, 255, 0.6);
 }
 </style>
