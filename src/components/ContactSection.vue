@@ -10,7 +10,6 @@
           :key="iframeKey"
           src="https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/viewform?embedded=true&usp=sf_link"
           loading="lazy"
-          referrerpolicy="no-referrer"
         >
           Cargando…
         </iframe>
