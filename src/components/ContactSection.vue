@@ -3,13 +3,14 @@
     <h2 class="section-title">Contacto</h2>
     <div class="contact-container">
       <div class="contact-form">
-        <p>Completá el formulario de contacto haciendo clic en el botón:</p>
         
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/viewform"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          Abrir formulario de contacto
+        <p>Completá el formulario de contacto haciendo clic en el botón:</p>
+        <a>
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/viewform"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Abrir formulario de contacto
         </a>
       </div>
     </div>
