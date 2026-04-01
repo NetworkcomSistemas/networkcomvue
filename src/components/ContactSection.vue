@@ -3,10 +3,14 @@
     <h2 class="section-title">Contacto</h2>
     <div class="contact-container">
       <div class="contact-form">
-        <!-- 👇 Reemplaza con la URL de tu formulario -->
-       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/viewform?embedded=true" width="640" height="826" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-          Cargando formulario...
-        </iframe>
+        <p>Completá el formulario de contacto haciendo clic en el botón:</p>
+        
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/viewform"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          Abrir formulario de contacto
+        </a>
       </div>
     </div>
   </section>
