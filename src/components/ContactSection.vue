@@ -5,7 +5,7 @@
       <div class="contact-form">
         
         <p>Completá el formulario de contacto haciendo clic en el botón:</p>
-        <a>
+        <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdoMGR5J3K2Nb2yzMlSeq5_5HWXVHojY8TwCTPCRmvnUwXXMw/viewform"
             target="_blank"
             class="btn btn-primary"
